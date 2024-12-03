@@ -5,9 +5,9 @@ import winston from 'winston'
  *
  * @param loggerName - a name of a logger that will be added to all messages
  */
-export function createLogger(loggerName) {
+export default function createLogger(loggerName, logLevel = 'info') {
   return winston.createLogger({
-    level: 'info',
+    level: logLevel,
     format: winston.format.json(),
     defaultMeta: { name: loggerName },
     transports: [new winston.transports.Console()]
