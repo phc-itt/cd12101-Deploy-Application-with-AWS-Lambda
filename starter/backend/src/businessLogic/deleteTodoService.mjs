@@ -1,4 +1,4 @@
-import { deleteRecord } from '../dataLayer/todoDynamodbAccessLayer.mjs'
+import { deleteRecord } from '../dataLayer/DBAccessLayer.mjs'
 import { getUserId } from '../lambda/utils.mjs'
 import { environments } from '../utils/utils.mjs'
 import createLogger from '../utils/logger.mjs'
